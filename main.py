@@ -3,9 +3,6 @@ import csv
 import sys
 from pylatex import Document, Tabular, NoEscape, MultiRow, MultiColumn
 
-#only works with one table, implement multiple later
-#check stars are working correctly
-
 def main(config_filepath, csv_filepath): 
 	with open(config_filepath, 'r') as config_file: 
 		config = json.load(config_file)
